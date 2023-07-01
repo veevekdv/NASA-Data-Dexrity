@@ -1,0 +1,8 @@
+Mainpage Data images Sources
+
+1.  https://www.geocurrents.info/geonotes/renewable-electricity-production-mapped    (hydro energy)
+2. https://www.reddit.com/r/MapPorn/comments/bopkw8/a_map_of_how_much_of_a_countrys_energy_is_clean/  (percentage of renewable energy)
+3. https://www.geocurrents.info/geonotes/renewable-electricity-production-mapped   (wind energy)
+4.https://www.aljazeera.com/news/2022/1/20/interactive-how-much-of-your-countrys-electricity-is-renewable-infographic
+5. https://solarpower.guide/solar-energy-insights/countries-largest-shares-renewable-energy-solar
+6. https://www.thinkgeoenergy.com/global-map-to-identify-areas-suitable-for-geothermal-power-plants/

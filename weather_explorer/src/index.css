@@ -1,0 +1,18 @@
+nav {
+  background-color: rgb(34, 118, 172);
+}
+
+.input-group input.form-control {
+  visibility: hidden;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.input-group.search-open input.form-control {
+  visibility: visible;
+  width: 500px;
+}
+
+.nav-link {
+  font-weight: bold !important;
+}

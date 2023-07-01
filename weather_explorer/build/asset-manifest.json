@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/node/static/css/main.76cb66ab.css",
+    "main.js": "/node/static/js/main.74d20442.js",
+    "static/js/10.82995b66.chunk.js": "/node/static/js/10.82995b66.chunk.js",
+    "static/js/659.187281a5.chunk.js": "/node/static/js/659.187281a5.chunk.js",
+    "static/js/360.3973d9c3.chunk.js": "/node/static/js/360.3973d9c3.chunk.js",
+    "static/js/82.6e3bd467.chunk.js": "/node/static/js/82.6e3bd467.chunk.js",
+    "static/js/787.bec442d5.chunk.js": "/node/static/js/787.bec442d5.chunk.js",
+    "static/media/img4.jpeg": "/node/static/media/img4.764d5ee58d27ac36e2a7.jpeg",
+    "static/media/img1.jpeg": "/node/static/media/img1.8dc3778d699c7b104b86.jpeg",
+    "static/media/img3.jpeg": "/node/static/media/img3.f96d38c7d8553ec8a308.jpeg",
+    "static/media/img2.jpeg": "/node/static/media/img2.b7896845291084aec043.jpeg",
+    "static/media/windMap.jpg": "/node/static/media/windMap.69a8e4cc1576e8c337bf.jpg",
+    "static/media/hydroMap.jpg": "/node/static/media/hydroMap.6bd2ae394a051ecaf1eb.jpg",
+    "static/media/solarMap.jpg": "/node/static/media/solarMap.8b53b3e9c08817452f1c.jpg",
+    "static/media/geoMap.jpg": "/node/static/media/geoMap.cbed8344d940bb50c536.jpg",
+    "static/media/geoLegend.jpg": "/node/static/media/geoLegend.04e6bad7fce9ec3756a8.jpg",
+    "static/media/hydroLegend.jpg": "/node/static/media/hydroLegend.77d66cb2075f3d419626.jpg",
+    "static/media/solarLegend.jpg": "/node/static/media/solarLegend.dde32ac831288eca7a7e.jpg",
+    "static/media/windLegend.jpg": "/node/static/media/windLegend.24b508cd7521d7495c33.jpg",
+    "static/media/logo.svg": "/node/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/node/index.html",
+    "main.76cb66ab.css.map": "/node/static/css/main.76cb66ab.css.map",
+    "main.74d20442.js.map": "/node/static/js/main.74d20442.js.map",
+    "787.bec442d5.chunk.js.map": "/node/static/js/787.bec442d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76cb66ab.css",
+    "static/js/main.74d20442.js"
+  ]
+}

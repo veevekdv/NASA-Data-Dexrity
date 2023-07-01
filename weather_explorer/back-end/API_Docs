@@ -1,0 +1,161 @@
+API Documentation
+GET /api/data/:energyType
+Description
+Retrieves the data for a specific energy type.
+
+URL Parameters
+energyType - The energy type to retrieve data for (required).
+Returns
+Returns JSON data of the requested energy type if found.
+
+Example
+GET /api/data/wind
+Response:
+
+json
+{
+  "country": "Afghanistan",
+  "country_long": "Islamic Republic of Afghanistan",
+  "name": "Kabul Solar",
+  "gppd_idnr": "AF0001",
+  "capacity_mw": 0.25,
+  "latitude": 34.563,
+  "longitude": 69.212,
+  "primary_fuel": "Solar",
+  "other_fuel1": "",
+  "other_fuel2": "",
+  "other_fuel3": "",
+  "commissioning_year": 2013,
+  "owner": "Government of Afghanistan",
+  "source": "Afg Ministry of Energy & Water",
+  "url": "",
+  "geolocation_source": "Google Maps",
+  "wepp_id": "",
+  "year_of_capacity_data": 2017,
+  "generation_gwh_2013": null,
+  "generation_gwh_2014": null,
+  "generation_gwh_2015": null,
+  "generation_gwh_2016": null,
+  "generation_gwh_2017": null,
+  "generation_gwh_2018": null,
+  "generation_gwh_2019": null,
+  "generation_data_source": "",
+  "estimated_generation_gwh_2013": null,
+  "estimated_generation_gwh_2014": null,
+  "estimated_generation_gwh_2015": null,
+  "estimated_generation_gwh_2016": null,
+  "estimated_generation_gwh_2017": null,
+  "estimated_generation_note_2013": "",
+  "estimated_generation_note_2014": "",
+  "estimated_generation_note_2015": "",
+  "estimated_generation_note_2016": "",
+  "estimated_generation_note_2017": ""
+}
+GET /api/data/:energyType/:location
+Retrieves the data for a specific energy type and location.
+
+URL Parameters
+energyType - The energy type to retrieve data for (required).
+location - The location to retrieve data for (required).
+Returns
+Returns JSON data of the requested energy type and location if found.
+
+Example
+GET /api/data/solar/California
+Response:
+
+json
+{
+  "country": "United States",
+  "country_long": "United States of America",
+  "name": "Agua Caliente Solar Project",
+  "gppd_idnr": "",
+  "capacity_mw": 274,
+  "latitude": 33.934,
+  "longitude": -116.485,
+  "primary_fuel": "Solar",
+  "other_fuel1": "",
+  "other_fuel2": "",
+  "other_fuel3": "",
+  "commissioning_year": 2014,
+  "owner": "MidAmerican Renewables, LLC",
+  "source": "National Renewable Energy Laboratory",
+  "url": "http://www.nrel.gov/csp/solarpaces/project_detail.cfm/projectID=40",
+  "geolocation_source": "NREL",
+  "wepp_id": "",
+  "year_of_capacity_data": 2017,
+  "generation_gwh_2013": 664.252,
+  "
+  }
+
+
+  This API provides access to data related to energy plants, their types, and other related information. The data can be searched, filtered, and downloaded for further analysis.
+Base URL
+All API requests should be made to the following base URL:
+http://localhost:5000/api
+
+Endpoints
+1. GET /data/:name
+Fetches data for an energy plant by its name.
+Path Parameters:
+●	name: (string) The name of the energy plant.
+Response:
+A JSON object containing the energy plant's data.
+2. POST /data
+Adds a new energy plant to the database.
+Request Body:
+A JSON object containing the energy plant's data. Only name and primary_fuel are required; other fields will be set to default values if not provided.
+{
+  "name": "Plant Name",
+  "primary_fuel": "Fuel Type",
+  ...
+}
+
+Response:
+A JSON object containing the newly added energy plant's data.
+3. GET /maps/:energyType
+Fetches all energy plants with the specified energy type.
+Path Parameters:
+●	energyType: (string) The type of energy (e.g., "solar", "wind").
+Response:
+A JSON array containing the energy plants with the specified energy type.
+4. GET /download-map/:energyType
+Downloads a CSV file containing all energy plants with the specified energy type.
+Path Parameters:
+●	energyType: (string) The type of energy (e.g., "solar", "wind").
+Response:
+A CSV file containing the energy plants with the specified energy type.
+5. GET /search/:query
+Searches for energy plants matching the specified query.
+Path Parameters:
+●	query: (string) The search query.
+Response:
+A JSON array containing the search results.
+Error Handling
+In case of errors, the API will return an HTTP status code indicating the error type, along with a JSON object containing an error message:
+{
+  "message": "Error description"
+}
+
+Example
+Here's an example of how to interact with the API using JavaScript and the Fetch API:
+// Fetch data for an energy plant by name
+fetch('http://localhost:5000/api/data/Plant_Name')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
+// Add a new energy plant
+fetch('http://localhost:5000/api/data', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+	"name": "New Plant",
+	"primary_fuel": "Solar"
+  })
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
+
